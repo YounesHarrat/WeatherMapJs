@@ -16,9 +16,9 @@ let url =
 
 const weekDC = document.querySelector('#weekDataContainer')
 
-const data = [];
+let data = [];
 
-const displayChart = ()=>{
+const displayChart = (cityName)=>{
     Highcharts.chart('container', {
         chart: {
             type: 'line'
@@ -84,7 +84,7 @@ const makeWeekDOMCards = (dailyArray)=>{
         console.log("UPDATED")
         weekDC.innerHTML ="";
     }
-    
+    data = []
     dailyArray.forEach(day => {
         const dayCard = document.createElement('div')
         dayCard.classList = "cardDay col"
@@ -111,7 +111,7 @@ const makeWeekDOMCards = (dailyArray)=>{
     });
     console.log(data)
     weekDC.removeChild(weekDC.lastChild)
-    displayChart()
+    displayChart(cityName)
 }
 
 const init = (json) => {
