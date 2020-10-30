@@ -1,0 +1,91 @@
+body{
+    background-color: bisque;
+}
+
+header{
+    font-size: 2vw;
+    text-align: center;
+    -webkit-text-stroke: rgb(177, 100, 0) 1px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+section{
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+span{
+    margin:0 1vw 0 0;
+}
+
+#searchBar{
+   background-color: transparent;
+}
+
+input{
+    
+    width:10vw;
+    height:3vh;
+    border-radius: 15px;
+    border: cadetblue 2px solid;
+    text-align: center;
+}
+
+button{
+    color: white;
+    background-color: cadetblue;
+    width:10vw;
+    height:4vh;
+    border-radius: 15px;
+    border: rgb(255, 255, 255) 3px solid;
+    font-weight: bolder;
+    font-size: 0.8rem;
+}
+
+#weekDataContainer{
+flex-wrap: wrap;
+margin-top: 5vh;
+    margin: auto;
+    padding: 1vw;
+    width:90vw;
+    min-height:50vh;
+    border: rgb(2, 2, 2) 2px solid ;
+    background-color: lightcoral;
+}
+
+.cardDay{
+    margin: auto;
+    border: rgb(0, 0, 0) 3px solid;
+    min-width:20vh;
+    min-height: fit-content;
+}
+
+.headerDay{
+  
+  background-color:lightseagreen;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: whitesmoke;
+
+}
+
+.bodyDay{
+    display: grid;
+    background-color: rgb(188, 253, 253);
+}
+
+p{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 0.9rem;
+}
+
+
